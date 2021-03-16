@@ -1,0 +1,70 @@
+{
+    "productos": [
+        {
+            "producto": "Portable DVD player",
+            "cod_product": "00025486-7",
+            "proveedor": "Ultrasonic United",
+            "tamaño": "24 x 19.5 x 29 cm",
+            "peso": "0.84",
+            "valor": "250000",
+            "pais":"China"
+        },
+        {
+            "producto": "Beam Breaker B-3",
+            "cod_product": "00025486-3",
+            "proveedor": "Technocom",
+            "tamaño": "10 x 20 x 25 cm",
+            "peso": "1",
+            "valor": "100000",
+            "pais":"Argentina"
+        },
+        {
+            "producto": "Broad Screen 22HD",
+            "cod_product": "00031240-8",
+            "proveedor": "Technocom",
+            "tamaño": "15 x 60 x 70 cm",
+            "peso": "14",
+            "valor": "1500000",
+            "pais":"Argentina"
+        },
+
+        {
+            "producto": "Beam Breaker B-3",
+            "cod_product": "00081850-9",
+            "proveedor": "Hitachi",
+            "tamaño": "10 x 20 x 25 cm",
+            "peso": "4",
+            "valor": "100000",
+            "pais":"Estados Unidos"
+        },
+
+        {
+            "producto": "CD/DVD case: 264 sleeves",
+            "cod_product": "00077723-1",
+            "proveedor": "Titanium",
+            "tamaño": "30 x 50 x 50 cm",
+            "peso": "1",
+            "valor": "7000",
+            "pais":"Estados Unidos"
+        },
+
+        {
+            "producto": "Ergonomic Keyboard",
+            "cod_product": "00077893-0",
+            "proveedor": "Ultra Sonic United",
+            "tamaño": "30 x 20 x 25 cm",
+            "peso": "0.9",
+            "valor": "3000",
+            "pais":"China"
+        },
+        {
+            "producto": "Ergonomic Keyboard",
+            "cod_product": "00085473-2",
+            "proveedor": "Red Point Stores",
+            "tamaño": "40 x 20 x 25 cm",
+            "peso": "0.8",
+            "valor": "2500",
+            "pais":"Uruguay"
+        }
+    ]
+}

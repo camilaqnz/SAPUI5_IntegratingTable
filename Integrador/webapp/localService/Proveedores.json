@@ -1,0 +1,24 @@
+{
+    "proveedorList": [
+        { 
+            "proveedor": "Ultrasonic United",
+            "key": 1
+        },
+        { 
+            "proveedor": "Technocom", 
+            "key": 2
+        },
+        { 
+            "proveedor": "Hitachi", 
+            "key": 3
+        },
+        { 
+            "proveedor": "Titanium",
+            "key": 4
+        },
+        {
+            "proveedor": "Red Point Stores",
+            "key": 5
+        }
+    ]
+}

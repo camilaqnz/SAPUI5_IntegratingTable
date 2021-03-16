@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Integrador-Integrador",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/integrador-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/IntegradorIntegrador/index.html",
+        "--ui5",
+        "{\"version\":\"1.84.8\"}"
+      ],
+      "cwd": "${workspaceFolder}/Integrador",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/Integrador/Integrador\"}"
+      },
+      "envFile": "${workspaceFolder}/Integrador/.env1",
+      "preLaunchTask": "Build Integrador"
+    }
+  ]
+}

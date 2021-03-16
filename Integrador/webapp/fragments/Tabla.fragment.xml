@@ -1,0 +1,59 @@
+<core:FragmentDefinition
+xmlns="sap.m"
+xmlns:core="sap.ui.core"
+controllerName="sap.m.sample.Table.Table"
+xmlns:mvc="sap.ui.core.mvc"
+>
+        <Table items="{ProductosJSON>/productos}" id="idTabla">
+            <columns>
+                <Column width="12em">
+                    <Text text="{i18n>product}" />
+                </Column>
+                <Column width="12em">
+                    <Text text="{i18n>supplier}" />
+                </Column>
+                <Column width="12em">
+                    <Text text="{i18n>dimensions}" />
+                </Column>
+                <Column width="12em">
+                    <Text text="{i18n>weight}" />
+                </Column>
+                <Column width="12em">
+                    <Text text="{i18n>price}" />
+                </Column>
+                <Column width="12em">
+                    <Text text="{i18n>country}" />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <cells>
+                    <ObjectIdentifier
+                        title="{ProductosJSON>producto}"
+                        text="{ProductosJSON>cod_product}"/>
+                    </cells>
+                    <cells>
+                        <Text text="{ProductosJSON>proveedor}" />
+                    </cells>
+                    <cells>
+                        <Text text="{ProductosJSON>tamaño}" />
+                    </cells>
+                    <cells>
+                    <ObjectNumber
+                        number="{ProductosJSON>peso}"
+                        unit="Kg"
+                        state="{path: 'ProductosJSON>peso', formatter: '.Formatter.formatColor'}"
+                     /> 
+                    </cells>
+                    <cells>
+                        <Text text="{path: 'ProductosJSON>valor', formatter: '.Formatter.formatPrice'}  EUR" />
+                    </cells>
+                    <cells>
+                        <Text text="{ProductosJSON>pais}" />
+                    </cells>
+            
+                    </ColumnListItem>
+                </items>
+            </Table>
+ 
+</core:FragmentDefinition>
