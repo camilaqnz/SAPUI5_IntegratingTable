@@ -46,7 +46,7 @@ xmlns:mvc="sap.ui.core.mvc"
                      /> 
                     </cells>
                     <cells>
-                        <Text text="{path: 'ProductosJSON>valor', formatter: '.Formatter.formatPrice'}  EUR" />
+                        <Text text="{path: 'ProductosJSON>valor', formatter: '.Formatter.formatPrice'}" />
                     </cells>
                     <cells>
                         <Text text="{ProductosJSON>pais}" />

@@ -1,0 +1,39 @@
+<core:FragmentDefinition
+xmlns="sap.m"
+xmlns:core="sap.ui.core">
+
+    <ViewSettingsDialog confirm="onGroupDialogConfirm">
+        <groupItems>
+            <ViewSettingsItem 
+            text="{i18n>product}"
+            key="producto" 
+            selected="true"/>
+
+            <ViewSettingsItem 
+            text="{i18n>supplier}"
+            key="proveedor" 
+            selected="true"/>
+
+            <ViewSettingsItem 
+            text="{i18n>codProduc}"
+            key="cod_product" 
+            selected="true"/>
+
+            <ViewSettingsItem 
+            text="{i18n>country}"
+            key="pais" 
+            selected="true"/>
+
+            <ViewSettingsItem 
+            text="{i18n>price}"
+            key="valor" 
+            selected="true"/>
+
+            <ViewSettingsItem 
+            text="{i18n>weight}"
+            key="peso" 
+            selected="true"/>
+        </groupItems>
+    </ViewSettingsDialog>
+
+</core:FragmentDefinition>

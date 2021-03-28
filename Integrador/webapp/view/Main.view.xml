@@ -2,42 +2,47 @@
 xmlns:mvc="sap.ui.core.mvc"
 xmlns="sap.m"
 xmlns:core="sap.ui.core"
+xmlns:tnt="sap.tnt"
 
 displayBlock="true" >
 
     <Page id="page" title="{i18n>title}">
         <content>
-
+        <tnt:ToolHeader>
                 <!-- BUSCADOR -->
-                <Toolbar>
-                    <SearchField
-                    width="30%"
+            <Toolbar>
+                <SearchField
+                width="30%"
+                class="sapUiSmallMargin"
+                placeholder="{i18n>search}"
+                liveChange="onSearch"
+                value="{MensajeJSON>/datos/pais}"/>
+                <Select
+                    forceSelection="false"
+                    selectedKey="{MensajeJSON>/datos/proveedor}"
+                    items="{
+                        path: 'ProductosJSON>/productos'
+                    }">
+                    <core:Item key="{ProductosJSON>proveedor}" text="{ProductosJSON>proveedor}" />
+                </Select>
+                <Input 
+                    width="30%" 
+                    type="Date" 
+                    id="idDateInput" 
+                    placeholder="{i18n>date}"
                     class="sapUiSmallMargin"
-                    placeholder="{i18n>search}"
-                    liveChange="onSearch"
-                    value="{MensajeJSON>/datos/0/pais}"/>
-                    <Select
-                        forceSelection="false"
-                        selectedKey="{MensajeJSON>/datos/0/proveedor}"
-                        items="{
-                            path: 'ProductosJSON>/productos'
-                        }">
-                        <core:Item key="{ProductosJSON>proveedor}" text="{ProductosJSON>proveedor}" />
-				    </Select>
-                    <Input 
-                        width="30%" 
-                        type="Date" 
-                        id="idDateInput" 
-                        placeholder="{i18n>date}"
-                        class="sapUiSmallMargin"
-                        value="{MensajeJSON>/datos/0/fecha}"/>
+                    value="{MensajeJSON>/datos/fecha}"/>
 
-                    <Button text="{i18n>ready}" press="onPress"/>
-                </Toolbar>
+                <Button text="{i18n>ready}" press="onPress"/>
+                <Button tooltip="Ordenar" icon="sap-icon://sort" press="onSort"/>
+                <Button tooltip="Agrupar" icon="sap-icon://group-2" press="onGroup"/>
+                <Button tooltip="Filtrar" icon="sap-icon://filter" press="onFilter"/>
+            </Toolbar>
+        </tnt:ToolHeader>
                     
-                <Panel id="idPanel" expandable="true" headerText="{i18n>information}">
-                    <core:Fragment fragmentName= "Integrador.Integrador.fragments.Tabla" type="XML"/>
-                </Panel>
+            <Panel id="idPanel" expandable="true" headerText="{i18n>information}">
+                <core:Fragment fragmentName= "Integrador.Integrador.fragments.Tabla" type="XML"/>
+            </Panel>
                 
         </content>
     </Page>

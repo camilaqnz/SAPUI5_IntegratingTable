@@ -12,7 +12,8 @@ sap.ui.define([], function(){
         ids: {
             FRAGMENTS: {
                 dialogProducts: "idDProductos",
-                // dialogSearch: "idDialogBusqueda",
+                dialogSearch: "idDialogBusqueda",
+                sortDialog: "idSortDialog"
             }
         },
 
@@ -20,12 +21,16 @@ sap.ui.define([], function(){
             main: "Main",
             JSON: {
                 productos: "Productos.json",
-                proveedor: "Proveedor.json",
+                proveedor: "Proveedores.json",
                 datosBusqueda: "modalSearch.json"
             },
             FRAGMENTS: {
-                dialogProducts: "Integrador.Integrador.fragments.Tabla",
-                dialogSearch: "Integrador.Integrador.fragments.Dialog"
+                dialogTable: "Integrador.Integrador.fragments.Tabla",
+                dialogSearch: "Integrador.Integrador.fragments.Dialog",
+                dialogSort: "Integrador.Integrador.fragments.SortDialog",
+                dialogGroup: "Integrador.Integrador.fragments.GroupDialog",
+                dialogFilter: "Integrador.Integrador.fragments.FilterDialog"
+                
             }
         },
 

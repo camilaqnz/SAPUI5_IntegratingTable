@@ -1,0 +1,47 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" >
+<Dialog>
+<f:Form> 
+        <f:title>
+            <core:Title text="Resultado" />
+        </f:title>
+        <f:layout>
+            <f:ResponsiveGridLayout
+            labelSpanXL="3"
+            labelSpanL="3"
+            labelSpanM="3"
+            labelSpanS="12"
+            adjustLabelSpan="false"
+            emptySpanXL="4"
+            emptySpanL="4"
+            emptySpanM="4"
+            emptySpanS="0"
+            columnsXL="1"
+            columnsL="1"
+            columnsM="1"
+            singleContainerFullSize="false"/>
+            </f:layout>
+        <f:formContainers>
+            <f:FormContainer>
+                <f:formElements>
+                    <f:FormElement label="Pais">
+                        <f:fields>
+                            <Text text="{MensajeJSON>/datos/pais}"/>
+                        </f:fields>
+                    </f:FormElement>
+                    <f:FormElement label="Proveedor">
+                        <f:fields>
+                            <Text text="{MensajeJSON>/datos/proveedor}"/>
+                        </f:fields>
+                    </f:FormElement>
+                    <f:FormElement label="Date">
+                        <f:fields>
+                            <Text text="{MensajeJSON>/datos/fecha}"/>
+                        </f:fields>
+                    </f:FormElement>
+                </f:formElements>
+            </f:FormContainer>
+        </f:formContainers>
+		</f:Form>
+        <Button press="onCloseDialog" type="Emphasized" text="Cerrar"/>
+</Dialog>
+</core:FragmentDefinition>

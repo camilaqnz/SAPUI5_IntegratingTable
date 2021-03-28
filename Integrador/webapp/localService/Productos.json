@@ -6,7 +6,7 @@
             "proveedor": "Ultrasonic United",
             "tamaño": "24 x 19.5 x 29 cm",
             "peso": "0.84",
-            "valor": "250000",
+            "valor": 1,
             "pais":"China"
         },
         {
@@ -15,7 +15,7 @@
             "proveedor": "Technocom",
             "tamaño": "10 x 20 x 25 cm",
             "peso": "1",
-            "valor": "100000",
+            "valor": 2,
             "pais":"Argentina"
         },
         {
@@ -24,7 +24,7 @@
             "proveedor": "Technocom",
             "tamaño": "15 x 60 x 70 cm",
             "peso": "14",
-            "valor": "1500000",
+            "valor": 3,
             "pais":"Argentina"
         },
 
@@ -34,7 +34,7 @@
             "proveedor": "Hitachi",
             "tamaño": "10 x 20 x 25 cm",
             "peso": "4",
-            "valor": "100000",
+            "valor": 4,
             "pais":"Estados Unidos"
         },
 
@@ -44,27 +44,72 @@
             "proveedor": "Titanium",
             "tamaño": "30 x 50 x 50 cm",
             "peso": "1",
-            "valor": "7000",
+            "valor": 5,
             "pais":"Estados Unidos"
         },
 
         {
+            "producto": "Ergonomic Mouse",
+            "cod_product": "000927893-0",
+            "proveedor": "Ultrasonic United",
+            "tamaño": "10 x 15 x 10 cm",
+            "peso": "0.3",
+            "valor": 6,
+            "pais":"China"
+        },
+        {
+            "producto": "Tablet Pink",
+            "cod_product": "00096231-2",
+            "proveedor": "Red Point Stores",
+            "tamaño": "40 x 20 x 25 cm",
+            "peso": "0.8",
+            "valor": 7,
+            "pais":"Uruguay"
+        },
+        {
             "producto": "Ergonomic Keyboard",
             "cod_product": "00077893-0",
-            "proveedor": "Ultra Sonic United",
+            "proveedor": "Ultrasonic United",
             "tamaño": "30 x 20 x 25 cm",
             "peso": "0.9",
-            "valor": "3000",
+            "valor": 8,
+            "pais":"China"
+        },
+        {
+            "producto": "Cellphone ACCT45",
+            "cod_product": "00098652-7",
+            "proveedor": "Titanium",
+            "tamaño": "20 x 40 x 1 cm",
+            "peso": "0.1",
+            "valor": 9,
+            "pais":"China"
+        },
+        {
+            "producto": "Cellphone ACCT45",
+            "cod_product": "00077125-0",
+            "proveedor": "Titanium",
+            "tamaño": "20 x 20 x 25 cm",
+            "peso": "0.2",
+            "valor": 11,
             "pais":"China"
         },
         {
             "producto": "Ergonomic Keyboard",
-            "cod_product": "00085473-2",
-            "proveedor": "Red Point Stores",
-            "tamaño": "40 x 20 x 25 cm",
-            "peso": "0.8",
-            "valor": "2500",
-            "pais":"Uruguay"
+            "cod_product": "00077893-0",
+            "proveedor": "Ultrasonic United",
+            "tamaño": "30 x 20 x 25 cm",
+            "peso": "0.9",
+            "valor": 11,
+            "pais":"China"
+        },
+        {
+            "producto": "Plastic Keyboard",
+            "cod_product": "00077896-2",
+            "proveedor": "Titanium",
+            "tamaño": "30 x 20 x 25 cm",
+            "peso": "0.9",
+            "valor": 12,
+            "pais":"China"
         }
     ]
 }

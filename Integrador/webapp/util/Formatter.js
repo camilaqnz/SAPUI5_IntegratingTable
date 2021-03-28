@@ -6,6 +6,7 @@ sap.ui.define([
 ], function(Constants){    
     return {
         formatPrice: function (valor) {
+            valor = parseInt(valor);
             return valor/160;
             },
             
